@@ -36,7 +36,7 @@ test$Outcome <- as.factor(test$Outcome)
 
 #Apply Naive bayes, train the model
 #`Outcome ~ .` means Outcome is a function of all the other attributes in the dataset
-#You can also select specific 
+#You can also select columns of your choice using `Outcome ~ BloodPressure + Glucose + Insulin`
 nb <- naiveBayes(Outcome~., data = train)
 
 #Apply the trained model on test data
